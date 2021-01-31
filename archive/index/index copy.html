@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- jQuery for fragment insertion -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="alternate icon" href="img/favicon.png">
+    <link href="css/main.css" rel="stylesheet">
+    
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- load nav and footer-->
+    <script> 
+        $(function(){
+          $("#nav").load("fragments/nav.html");
+          $("#footer").load("fragments/footer.html");
+        });
+    </script> 
+
+    <title>Ohey</title>
+</head>
+
+<body class="text-center bg-light" id="page-top">
+    <div id="nav"></div>
+    <section class="cover-container d-flex p-3 mx-auto flex-column">
+        <main class="px-3 mb-5 mt-3">
+            <h1 class="headline mx-auto">Hospitality based headline here.</h1>
+            <p class="lead">I'm a very snappy sub-line that makes you want to click the following button</p>
+            <p class="lead">
+                <a href="/get" class="btn btn-lg btn-primary">Get Ohey</a>
+            </p>
+            <div class="header-img-container my-5">
+                <div id="lemon-pile-container" class="mx-auto">
+                    <img id="lemon-pile" src="/img/lemon_pile.png">
+                </div>
+                <div>
+                    <img id="device-placeholder" src="/img/device_placeholder.png">
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section class="page-section p-3 mx-auto" id="employer-employee-comp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 p-4 my-3 mx-auto box-container">
+                    <div class="row mb-3">
+                        <div class="col-12 text-start">
+                            <h4>For Workers</h4>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-7 me-auto text-start">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id feugiat nunc. Aliquam erat volutpat. Morbi fermentum tellus quis est interdum fringilla.
+                        </div>
+                        <div class="col-4">
+                            Maybe an img
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-start">
+                            <a class="btn btn-primary" href="/for-workers">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 p-4 my-3 mx-auto box-container">
+                    <div class="row mb-3">
+                        <div class="col-12 text-start">
+                            <h4>For Employers</h4>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-7 me-auto text-start">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut id feugiat nunc. Aliquam erat volutpat. Morbi fermentum tellus quis est interdum fringilla.
+                        </div>
+                        <div class="col-4">
+                            Maybe an img
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-start">
+                            <a class="btn btn-primary" href="/for-employers">Find out more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer text-white" id="footer">
+    </section>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+    <!-- Main js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -13,10 +13,10 @@
     <!-- jQuery for fragment insertion -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
-    <link rel="alternate icon" href="img/favicon.png">
-    <link href="css/main.css" rel="stylesheet">
-    
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="alternate icon" href="/img/favicon.png">
+    <link href="/css/main.css" rel="stylesheet">
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
@@ -25,8 +25,8 @@
     <!-- load nav and footer-->
     <script> 
         $(function(){
-          $("#nav").load("fragments/nav.html");
-          $("#footer").load("fragments/footer.html");
+          $("#nav").load("/fragments/nav.html");
+          $("#footer").load("/fragments/footer.html");
         });
     </script> 
 
@@ -34,7 +34,14 @@
 </head>
 
 <body class="text-center bg-light" id="page-top">
-    <img class="my-auto" src="/img/web_brand_black.svg" height="128" width="auto">
+    <div id="nav"></div>
+
+    <section class="cover-container d-flex p-3 mx-auto flex-column text-start">
+        <h1>About</h1>
+    </section>
+
+    <section class="footer text-white" id="footer">
+    </section>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -48,7 +55,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     
     <!-- Main js -->
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
